@@ -11,14 +11,6 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <script src="js/jquery.min.js"></script>
         <style>
-            @media all and (min-width: 768px) {
-
-            }
-
-            @media all and (min-width: 960px) {
-
-            }
-
             #wrap {
                 display: flex;
                 flex-flow: column nowrap;
@@ -31,6 +23,56 @@
                 box-sizing: border-box;
             }
 
+            .info_section {
+                order: 1;
+                width: 100%;
+                background: #2ecc71;
+                border-bottom: 1px solid #39d67c;
+            }
+
+            .info_list {
+                display: flex;
+            }
+
+            .info_list li {
+                width: 25%;
+                text-align: center;
+            }
+
+            .info_list li a {
+                display: block;
+                padding: 15px 0;
+                padding: 0.938rem 0;
+            }
+
+            .header {
+                display: flex;
+                order: 2;
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+            }
+
+            .logo {
+                order: 1;
+                width: 100%;
+                padding: 30px 0;
+                padding: 1.875rem 0;
+                font-size: 1.188em;
+                font-size: 1.188rem;
+                line-height: 21px;
+                line-height: 1.313rem;
+                text-align: center;
+                text-transform: uppercase;
+                background: #2ecc71;
+                text-shadow: 0px 1px 1px #25ab5e;
+            }
+
+            .nav {
+                order: 2;
+                width: 100%;
+            }
+
             @media all and (min-width: 768px) {
                 #wrap {
                     flex-flow: row wrap;
@@ -41,6 +83,28 @@
                 #wrap {
                     position: relative;
                     width: 90%;
+                }
+
+                .info_section {
+                    order: 0;
+                    position: absolute;
+                    top: 30px;
+                    top: 1.875rem;
+                    right: 30px;
+                    right: 1.875rem;
+                    z-index: 30;
+                    width: auto;
+                    border-bottom: 0;
+                }
+
+                .info_list li {
+                    width: auto;
+                    margin-right: 15px;
+                    margin-right: 0.625rem;
+                }
+
+                .info_list li a {
+                    padding: 0;
                 }
             }
         </style>
@@ -108,6 +172,40 @@
                     </li>
                 </ul>
             </section>
+            <section class="rankup_section">
+                <h2 class="title">인기 검색어</h2>
+                <ul class="rankup_list">
+                    <li><a href="">Tame Impala</a></li>
+                    <li><a href=""></a>Radiohead</li>
+                    <li><a href=""></a>Sia</li>
+                    <li><a href=""></a>Bjork</li>
+                    <li><a href=""></a>Dua Lipa</li>
+                    <li><a href=""></a>Polly Scattergood</li>
+                    <li><a href=""></a>Birthday massacre</li>
+                </ul>
+            </section>
+            <section class="banner_section">
+                <div class="banner_box_01">
+                    <a href=""><img src="images/s_images/w3c_logo.png"></a>
+                </div>
+                <div class="banner_box_02">
+                    <ul class="banner_list">
+                        <li><a href=""><img src="images/s_images/html_logo.png"></a></li>
+                        <li><a href=""><img src="images/s_images/css_logo.png"></a></li>
+                        <li><a href=""><img src="images/s_images/js_logo.png"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="social_section">
+                <ul class="social_list">
+                    <li><a href=""><img src="images/s_images/social_icon_01.png"></a></li>
+                    <li><a href=""><img src="images/s_images/social_icon_02.png"></a></li>
+                    <li><a href=""><img src="images/s_images/social_icon_03.png"></a></li>
+                </ul>
+            </section>
+            <footer class="footer">
+                <p>copyright&copy; 2021.Flat Design blog all rights reserved.</p>
+            </footer>
         </div>
     </body>
 </html>
